@@ -4,5 +4,17 @@
     <meta content="">
     <style></style>
   </head>
-  <body>HELLO</body>
+  <body>
+    <%= form_for :location, :url => { :action => :create } do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+  
+  </body>
 </html>
